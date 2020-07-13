@@ -1,0 +1,407 @@
+body {
+  background: radial-gradient(farthest-corner at 40px 40px , rgb(40,40,40) 0%, rgb(0,0,0) 100% );
+  font-family: 'Ubuntu', sans-serif;  
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: rgb(255,255,255);
+}
+
+h2 {
+  color: rgb(255,255,255);
+}
+
+h4 {
+  color: rgb(170,185,175);
+}
+
+header {
+  margin-top: 0;
+  padding: 0;
+  height: 10px;
+  background-color: rgb(0,0,0);
+}
+
+/*---------------------------*/
+/* Navigation Bar */
+/*---------------------------*/
+nav {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 60px;
+  background-color: rgb(0,0,0);
+  /*position: fixed;*/
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-top: 0;
+  padding: 0;
+  display: inline-block;
+  float: left;
+  list-style: none;
+  line-height: 60px;
+}
+
+nav ul li a {
+  margin-top: 0;
+  padding: 0;
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  color: rgb(255,255,255);
+  padding: 0 20px;
+}
+
+nav ul li a:hover {
+  color: rgb(145,75,175);
+}
+
+/*---------------------------*/
+/* Images */
+/*---------------------------*/
+.smallLogo {
+  border-radius: 25px;
+  border-style: none;
+  width: 100px;
+  padding: 0px 12px;
+  object-fit: contain;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.job-Image {
+  border-radius: 25px;
+  border-style: none;
+  width: 200px;
+  padding: 0px 12px;
+  object-fit: contain;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.profile-Image {
+  width: 400px;
+  border-radius: 25px;
+  border-style: none;
+  padding: 0 12px;
+  object-fit: contain;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+/*---------------------------*/
+/* Sections (General) */
+/*---------------------------*/
+.Section {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.Section-Title2 {
+  margin: 0;
+  padding: 100px 0px 15px 0px;
+  width: 100%;
+
+  text-align: center;
+  font-size: 20px;
+  color: rgb(255,255,255);
+}
+
+.Section-Line2 {
+  margin: 0;
+  padding: 25px 0px;
+  width: 100%;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid rgb(135,135,135);
+}
+
+
+/* Text Containers */
+.job {
+  /*
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  padding: 0;
+*/
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.job-Description {
+  margin: 0;
+  padding: 12px 12px 12px 12px;
+  min-width: 300px;
+  display: inline;
+  background-color: rgba(255,255,255,0.034);
+  color: rgb(135,135,135);
+  border-radius: 25px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(0,0,0);
+}
+
+.list-Title {
+  display: inline-block;
+  margin: 0;
+  padding: 10px 0px 0px 0px;
+  color: rgb(170,185,175);
+  font-style: italic;
+}
+
+.list {
+  margin-top: 0;
+}
+
+.list li {
+  margin-top: 0;
+  padding: 0;
+}
+
+.degree {
+  margin: 0;
+  padding: 12px;
+  min-width: 300px;
+  width: 100%;
+  display: inline;
+  background-color: rgba(255,255,255,0.034);
+  color: rgb(135,135,135);
+  border-radius: 25px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(0,0,0);
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  align-items: stretch;
+}
+
+.degree-left {
+  color: rgb(255,255,255);
+}
+
+.degree-right {
+  margin-left: auto;
+  text-align: right;
+  color: rgb(255,255,255);
+}
+
+/* Text Headers */
+.profile-Name {
+  display: inline;
+  padding: 0;
+  color: rgb(185,100,40);
+}
+
+.degree-title {
+  color: rgb(220,120,20);
+  display: inline;
+}
+
+.job-Company {
+  display: inline;
+  text-decoration: underline;
+  color: rgb(220,120,20);
+}
+
+.job-Title {
+  display: inline;
+  padding: 0;
+  color: rgb(170,185,175);
+}
+
+.job-Date {
+  display: inline;
+  color: rgb(135,135,135);
+  font-style: italic;
+}
+
+.job-SkillSection {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.job-Skill {
+  border-radius: 22px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(40,120,140);
+  margin: 5px 5px;
+  padding: 2px 10px 2px 10px;
+  color: rgb(40,120,140);
+  background-color: rgba(0,0,0, 0.00);
+}
+
+.SubjectSection {
+  background-color: rgba(0,0,0, 0.00);
+  /*margin: 10px 75px 10px 150px;*/
+}
+
+.SubjectSection-Box {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+
+  background-color: rgba(255,255,255,0.034);
+  color: rgb(135,135,135);
+  border-radius: 25px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(0,0,0);
+  overflow: hidden;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.SubjectSection-Description {
+  display: inline;
+  padding: 12px 0px 12px 12px;
+}
+
+.SubjectSection-Title {
+  flex-basis: 100%;
+  margin: 0px 0px;
+  background-color: rgba(0,0,0,0.00);
+  color: rgb(0,0,0);
+}
+
+.SubjectSection-Subtitle {
+  display: inline;
+  color: rgb(255,255,255);
+}
+
+/*---------------------------*/
+/* Project Section */
+/*---------------------------*/
+#projects {
+  width: 50%;
+  justify-content: space-around;
+}
+
+.project {
+  position: relative;
+  display: block;
+
+  padding: 0;
+  margin: 12px;
+  width: 300px;
+  height: 300px;
+
+  border-radius: 25px;
+  border-style: none;
+  background-color: rgb(135,135,135);
+
+  object-fit: contain;
+  overflow: hidden;
+
+  flex-shrink: 0;
+}
+
+.project-hover {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  z-index: 1;
+  visibility: hidden;
+  background-color: rgba(0,0,0, 0.65);
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.project-image {
+  position: absolute;
+  z-index: 0;
+  height: 300px;
+}
+
+.project-Title {
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 0px 18px 0px;
+
+  color: rgb(220,120,20);
+}
+
+.project-brief {
+  margin: 0px 0px 30px 0px;
+  padding: 0;
+  font-size: 22px;
+  color: rgb(135,135,135);
+}
+
+.project-links {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.link {
+  margin-left: auto;
+}
+
+.link-img {
+  margin: 12px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.project-text {
+  margin: 0;
+  padding: 22px 0px 0px 0px;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+}
+
+.project-SkillSection {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.project:hover .project-hover {
+  visibility: visible;
+}

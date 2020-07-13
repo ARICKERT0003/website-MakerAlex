@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Alexander A. Rickert</title>
+		<link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+
+    <!-- Top Navigation Menu -->
+    <nav>
+      <ul>
+        <li><a href="#aboutMe">About Me</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+			
+		<!-- About Me Section -->
+		<section class="Section" id="aboutMe">
+			<h2 class="Section-Title2">About Me</h2>
+      <hr class="Section-Line2">
+
+      <article class="job">
+        <img class="profile-Image" src="img/paristownskylineflip2.jpg" /img>
+        <div class="job-Description">
+          <h2 class="profile-Name">Alex Rickert</h2><br>
+          <h3 class="job-Title">Birth Date: </h3>
+          <h4 class="job-Date">March 1st, 1991</h4><br>
+          <h3 class="job-Title">Hometown: </h3>
+          <h4 class="job-Date">Louisville, KY</h4><br>
+          <h3 class="job-Title">Bio: </h3>
+          <p>
+            I am an Electrical Engineer interested in computer vision and
+            robotics. I enjoy working on projects that will have a meaningfull
+            impact on the world. 
+          </p>					
+        </div>
+      </article>
+		</section>
+
+		<!-- Experience Section -->
+		<section class="Section" id="experience">
+			<h2 class="Section-Title2">Work Experience</h2>
+      <hr class="Section-Line2">
+
+			<!-- Experience 1 -->
+      <article class="job">
+        <img class="job-Image" src="img/Logo_Elexa2.png" /img>
+        <div class="job-Description">
+          <h2 class="job-Company">Elexa Consumer Products</h2><br>
+          <h3 class="job-Title">Contractor,</h3>
+          <h4 class="job-Date">March 2020 - May 2020</h4><br>
+          <p>
+            Built a power monitor for a leak detector device with sub-nanoampere
+            current. The monitor allowed the user to select from a list of 
+            premade tests which would periodically trigger 
+            different states in the leak detector and record current or voltage 
+            with a timestamp and save to CSV file. Built a small library of 
+            functions to allow future developers to be able to take what I 
+            created and expand it. 
+          </p>
+          <section class="job-SkillSection">
+            <h4 class="job-Skill">Arduino</h4>
+            <h4 class="job-Skill">Amplifiers</h4>
+            <h4 class="job-Skill">Breadboarding</h4>
+            <h4 class="job-Skill">Contract Negotiation</h4>
+            <h4 class="job-Skill">OOP</h4>
+            <h4 class="job-Skill">SCPI</h4>
+          </section>
+        </div>
+      </article>
+
+			<!-- Experience 1 -->
+      <article class="job">
+        <img class="job-Image" src="img/Logo_transparent_MHS.png" /img>
+        <div class="job-Description">
+          <h2 class="job-Company">Material Handling Systems (MHS)</h2><br>
+          <h3 class="job-Title">Research & Develpment Engineer,</h3>
+          <h4 class="job-Date">August 2018 - August 2019</h4><br>
+          <p>
+            Lead the development of a computer vision based solution for
+            destacking packages. This solution used a custom image and depth
+            sensor to capture a color point cloud of a scene. Using
+            a combination of C++ and CUDA, wrote a program which would
+            capture volume, surface area, and locations of packages in the
+            scene. The program ran on the custom sensor. This data would then 
+            be used to feed packages via a conveyor belt to a large delta robot 
+            which would perform sortation.  
+          </p>
+          <h4 class="list-Title">Responsibilities</h4>
+          <ul class="list">
+            <li>Setup and troubleshoot embedded devices on Linux network</li>
+            <li>Improve path planning and collision avoidance algorithms for a large delta robot</li>
+            <li>Develop original CUDA algorithms and convert C++ algorithms to CUDA for performance increase</li>
+            <li>Contribute to core libraries by adding functionality, documentation, and OOP principles</li>
+            <li>Collect data and provide feedback to vendor on a custom embedded vision device</li>
+            <li>Collaborate with Controls Engineers to develop and maintain a PLC communications specification</li>
+            <li>Collaborate with Mechanical Engineers to develop an installation specification for products</li>
+            <li>Work with team to install and commission a developed robotic and computer vision system in the field</li>
+            <li>Monitor and assess network traffic using Wireshark</li>
+            <li>Give and receive code reviews</li>
+          </ul>
+          <h4 class="list-Title">Achievements</h4>
+          <ul class="list">
+            <li>Developed a computer vision application on image sensor which was installed in the field</li>
+            <li>Developed GPU optimized voxelization algorithm which found volume and surface area of workspace</li>
+            <li>Reduced the size of libraries by more than half by implementing OOP principles</li>
+            <li>Troubleshot new firmware release of vendor code to identify error causing unusable data from sensor</li>
+            <li>Researched and implemented a fast logging library for dynamic logging and debugging statements</li>
+            <li>Provided onsite technical support for Fortune 500 customers</li>
+          </ul>
+
+          <h3 class="job-Title">Research & Develpment Co-Op,</h3>
+          <h4 class="job-Date">May 2018 - August 2018</h4><br>
+          <p>
+            Was chosen to be the first person to experiment with color image
+            and depth sensor. Tasked with converting non color program to
+            utilize color. Tasked with exploiting GPU onboard sensor to
+            increase performance.  
+          </p>
+          <h4 class="list-Title">Responsibilities</h4>
+          <ul class="list">
+            <li>Utilize OpenCV and Point Cloud Library to create a stereoscopic C++ application</li>
+            <li>Collect data on and give feedback to a manufacturer for a custom image sensor</li>
+          </ul>
+          <h4 class="list-Title">Achievments</h4>
+          <ul class="list">
+            <li>Created streamlined socket application for sending point cloud data over ethernet using UDP</li> 
+            <li>Developed and implemented CUDA accelerated matrix transform for XYZRGB point cloud data</li>
+          </ul>
+
+          <section class="job-SkillSection">
+            <h4 class="job-Skill">C/C++</h4>
+            <h4 class="job-Skill">CUDA</h4>
+            <h4 class="job-Skill">CMake</h4>
+            <h4 class="job-Skill">Doxygen</h4>
+            <h4 class="job-Skill">Git</h4>
+            <h4 class="job-Skill">Linux</h4>
+            <h4 class="job-Skill">Networking</h4>
+            <h4 class="job-Skill">OOP</h4>
+            <h4 class="job-Skill">OpenCV</h4>
+            <h4 class="job-Skill">Point Cloud Library</h4>
+            <h4 class="job-Skill">Robotics</h4>
+            <h4 class="job-Skill">Sockets</h4>
+          </section>
+        </div>
+      </article>
+
+			<!-- Experience 2 -->
+      <article class="job">
+        <img class="job-Image" src="img/logo_luckett.png" /img>
+        <div class="job-Description">
+          <h2 class="job-Company">Luckett & Farley</h2><br>
+          <h3 class="job-Title">Electrical Engineer Co-Op,</h3><br>
+          <h4 class="job-Date">May 2016 - August 2016,  January 2017 - May 2017</h4>
+          <p>
+            Part of a team which designed electrical systems for industrial
+            buildings. Used software to verify that the amount of lighting 
+            planned for areas met national standards. Verified existing 
+            conditions in "As-Built" documentation and performed inspections 
+            of jobsites.
+          </p>
+          <h4 class="list-Title">Responsibilities</h4>
+          <ul class="list">
+            <li>Design power distribution and lighting systems for large buildings</li>
+            <li>Work with vendors, contractors, and clients</li>
+            <li>Perform N.E.C. compliance testing on proposed electrical and lighting systems</li>
+            <li>Walk through and assess buildings for compliance with the proposed drawings</li>
+            <li>Create detailed diagrams to aid installation and wiring of electrical devices</li>
+          </ul>
+          <h4 class="list-Title">Achievements</h4>
+          <ul class="list">
+            <li>Contributed to a UPS expansion project which held the highest score for internal audits in 2016</li>
+          </ul>
+          <section class="job-SkillSection">
+            <h4 class="job-Skill">AutoCAD</h4>
+            <h4 class="job-Skill">Revit</h4>
+          </section>
+        </div>
+      </article>
+
+			<!-- Experience 1 -->
+<!--
+      <article class="job">
+        <img class="job-Image" src="img/Logo_white_ATG.png" /img>
+        <div class="job-Description">
+          <h2 class="job-Company">Against the Grain</h2><br>
+          <h3 class="job-Title">Server,</h3>
+          <h4 class="job-Date">August 2018 - August 2019</h4><br>
+          <p>
+            Elexa is a company which specializes in internet of things (IOT)
+            devices for the home. One of their biggest products is a leak
+            detector which is placed beneath a water source and alerts the user
+            when a leak occurs. This device may also be paired with a valve
+            operator which can cut off the upstream water source to prevent
+            damage to the household. 
+          </p>
+          <p>
+            I was contracted to help build a system which records battery usage
+            over time in each of the leak detectors different states. This data
+            would be used to help assess power efficiency and guide their
+            selection batteries in the future. 
+          </p>
+          <section class="job-SkillSection">
+            <h4 class="job-Skill">Arduino</h4>
+            <h4 class="job-Skill">Arduino</h4>
+            <h4 class="job-Skill">Arduino</h4>
+            <h4 class="job-Skill">Arduino</h4>
+          </section>
+        </div>
+      </article>
+-->
+		</section>
+
+    <!-- Education Section -->
+		<section class="Section" id="education">
+			<h2 class="Section-Title2">Education</h2>
+      <hr class="Section-Line2">
+
+			<!-- Degree 1 -->
+      <article class="job">
+        <img class="smallLogo" src="img/Logo_color_uofl_cardinal.png" /img>
+        <div class="degree">
+          <div class="degree-left">
+            <h2 class="degree-title">Masters of Electrical Engineering</h2><br>
+            <h3 class="job-Title">J.B. Speed School of Engineering, University of Louisville</h3><br>
+            <h3 class="job-Title">Louisville, KY</h3><br>
+          </div>
+          <div class="degree-right">
+            <h3 class="job-Title">Fall 2020 - Current</h3><br>
+            <h3 class="job-Title">GPA: 4.00</h3><br>
+          </div>
+        </div>
+      </article>
+
+			<!-- Degree 2 -->
+      <article class="job">
+        <img class="smallLogo" src="img/Logo_color_uofl_cardinal.png" /img>
+        <div class="degree">
+          <div class="degree-left">
+            <h2 class="degree-title">Bachelors of Electrical Engineering</h2><br>
+            <h3 class="job-Title">J.B. Speed School of Engineering, University of Louisville</h3><br>
+            <h3 class="job-Title">Louisville, KY</h3><br>
+          </div>
+          <div class="degree-right">
+            <h3 class="job-Title">Fall 2020 - Current</h3><br>
+            <h3 class="job-Title">GPA: 3.10</h3><br>
+          </div>
+        </div>
+      </article>
+
+			<!-- Degree 1 -->
+      <article class="job">
+        <img class="smallLogo" src="img/Logo_KCTCS.png" /img>
+        <div class="degree">
+          <div class="degree-left">
+            <h2 class="degree-title">Associate of Science</h2><br>
+            <h3 class="job-Title">Jefferson County Technical College</h3><br>
+            <h3 class="job-Title">Louisville, KY</h3><br>
+          </div>
+          <div class="degree-right">
+            <h3 class="job-Title">Fall 2020 - Current</h3><br>
+            <h3 class="job-Title">GPA: 3.11</h3><br>
+          </div>
+        </div>
+      </article>
+
+		</section>
+
+		<!-- Project Section -->
+		<section class="Section" id="projects">
+      <h2 class="Section-Title2">Projects</h2>
+      <hr class="Section-Line2">
+
+			<!-- Project1 -->
+      <article class="project">
+        <img class="project-image" src="img/paristownskylineflip2.jpg" /img>
+
+        <div class="project-hover">
+          <div class="project-links">
+            <a class="link" href="https://github.com/ARICKERT0003/FlightControlUnit">
+              <img class="link-img" src="img/Logo_trans_github.png">
+            </a>
+          </div>
+          <div class="project-text">
+            <h2 class="project-Title">Autonomous Quadcopter</h2>
+            <p class="project-brief">
+              C++ platform for controlling quadcopter with PixHawk flight
+              controller.
+            </p>
+            <section class="project-SkillSection">
+              <h4 class="job-Skill">C++</h4>
+              <h4 class="job-Skill">Mavlink</h4>
+              <h4 class="job-Skill">PixHawk</h4>
+              <h4 class="job-Skill">PX4</h4>
+            </section>
+          </div>
+        </div>
+
+      </article>
+
+			<!-- Project1 -->
+      <article class="project">
+        <img class="project-image" src="img/paristownskylineflip2.jpg" /img>
+
+        <div class="project-hover">
+          <div class="project-links">
+            <a class="link" href="https://github.com/ARICKERT0003/Image-Processing">
+              <img class="link-img" src="img/Logo_trans_github.png">
+            </a>
+          </div>
+          <div class="project-text">
+            <h2 class="project-Title">lib Image-Processing</h2>
+            <p class="project-brief">
+              Library of image-processing functions geared towards achieving
+              a stereoscopic application.
+            </p>
+            <section class="project-SkillSection">
+              <h4 class="job-Skill">C++</h4>
+              <h4 class="job-Skill">CMake</h4>
+              <h4 class="job-Skill">Doxygen</h4>
+              <h4 class="job-Skill">OpenCV</h4>
+              <h4 class="job-Skill">Stereoscopic</h4>
+            </section>
+          </div>
+        </div>
+
+      </article>
+
+			<!-- Project1 -->
+      <article class="project">
+        <img class="project-image" src="img/paristownskylineflip2.jpg" /img>
+
+        <div class="project-hover">
+          <div class="project-links">
+            <a class="link" href="https://github.com/ARICKERT0003/FlightControlUnit">
+              <img class="link-img" src="img/Logo_trans_github.png">
+            </a>
+          </div>
+          <div class="project-text">
+            <h2 class="project-Title">Personal Website</h2>
+            <p class="project-brief">
+              Personal website to showcase my skills and expose myself to web
+              development.
+            </p>
+            <section class="project-SkillSection">
+              <h4 class="job-Skill">CSS</h4>
+              <h4 class="job-Skill">HTML</h4>
+              <h4 class="job-Skill">PHP</h4>
+              <h4 class="job-Skill">Wordpress</h4>
+            </section>
+          </div>
+        </div>
+
+      </article>
+
+    </section>
+	</body>
+</html>
