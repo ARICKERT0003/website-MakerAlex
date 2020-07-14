@@ -1,3 +1,8 @@
+/*
+ *  Theme Name: MinimalCV
+ *
+ */
+
 body {
   background: radial-gradient(farthest-corner at 40px 40px , rgb(40,40,40) 0%, rgb(0,0,0) 100% );
   font-family: 'Ubuntu', sans-serif;  
@@ -33,65 +38,111 @@ nav {
   width: 100%;
   height: 60px;
   background-color: rgb(0,0,0);
-  /*position: fixed;*/
 }
 
 nav ul {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  width: fit-content;
+  display: block;
 }
 
 nav ul li {
   margin-top: 0;
   padding: 0;
   display: inline-block;
-  float: left;
   list-style: none;
   line-height: 60px;
 }
 
 nav ul li a {
-  margin-top: 0;
-  padding: 0;
+  margin: 0px auto;
+  padding: 0 20px;
+  float: none;
   display: block;
   text-decoration: none;
   font-size: 16px;
   color: rgb(255,255,255);
-  padding: 0 20px;
 }
 
 nav ul li a:hover {
   color: rgb(145,75,175);
 }
 
+.dropdown {
+  margin-top: 0;
+  padding: 0 20px;
+  display: inline-block;
+  position: relative;
+  list-style: none;
+  line-height: 60px;
+}
+
+.dropdown-button {
+  margin-top: 0;
+  padding: 0;
+  font-size: 16px;
+  color: rgb(255,255,255);
+  background-color: rgb(0,0,0);
+  border: none;
+}
+
+.dropdown-content {
+  margin-top: 0;
+  padding: 0;
+  line-height: 30px;
+  display: none;
+  position: absolute;
+  z-index: 1;
+  color: rgb(255,255,255);
+  background-color: rgb(0,0,0);
+}
+
+.dropdown-content a {
+  margin-top: 0;
+  padding: 0 5px;
+  display: block;
+  text-decoration: none;
+  text-align: left;
+  font-size: 16px;
+  color: rgb(255,255,255);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 /*---------------------------*/
 /* Images */
 /*---------------------------*/
 .smallLogo {
-  border-radius: 25px;
-  border-style: none;
-  width: 100px;
+  margin: 30px auto;
   padding: 0px 12px;
+  width: 10%;
+  max-width: 100px;
   object-fit: contain;
   overflow: hidden;
   flex-shrink: 0;
 }
 
 .job-Image {
-  border-radius: 25px;
-  border-style: none;
-  width: 200px;
-  padding: 0px 12px;
+  margin: 30px auto;
+  padding: 0;
+  width: 30%;
+  max-width: 200px;
   object-fit: contain;
   overflow: hidden;
   flex-shrink: 0;
 }
 
 .profile-Image {
-  width: 400px;
+  margin: 30px auto;
+  padding: 0;
+  width: 35%;
+  max-width: 300px;
+  display: inline-block;
   border-radius: 25px;
   border-style: none;
-  padding: 0 12px;
   object-fit: contain;
   overflow: hidden;
   flex-shrink: 0;
@@ -110,7 +161,7 @@ nav ul li a:hover {
   flex-direction: row;
 }
 
-.Section-Title2 {
+.Section-Title {
   margin: 0;
   padding: 100px 0px 15px 0px;
   width: 100%;
@@ -120,7 +171,7 @@ nav ul li a:hover {
   color: rgb(255,255,255);
 }
 
-.Section-Line2 {
+.Section-Line {
   margin: 0;
   padding: 25px 0px;
   width: 100%;
@@ -130,26 +181,43 @@ nav ul li a:hover {
 }
 
 
-/* Text Containers */
-.job {
-  /*
-  width: 65%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
+/* Article */
+.Article {
+  margin: 15px 0px;
   padding: 0;
-*/
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
 }
 
+.project {
+  position: relative;
+  display: block;
+
+  padding: 0;
+  margin: 12px;
+  width: 300px;
+  height: 300px;
+
+  border-radius: 25px;
+  border-style: none;
+  background-color: rgb(135,135,135);
+
+  object-fit: contain;
+  overflow: hidden;
+
+  flex-shrink: 0;
+}
+
+/* Text Containers */
 .job-Description {
-  margin: 0;
+  margin: 0 auto;
   padding: 12px 12px 12px 12px;
   min-width: 300px;
-  display: inline;
+  width: 65%;
+  display: inline-block;
   background-color: rgba(255,255,255,0.034);
   color: rgb(135,135,135);
   border-radius: 25px;
@@ -176,11 +244,11 @@ nav ul li a:hover {
 }
 
 .degree {
-  margin: 0;
+  margin: 0 auto;
   padding: 12px;
   min-width: 300px;
-  width: 100%;
-  display: inline;
+  width: 85%;
+  display: inline-block;
   background-color: rgba(255,255,255,0.034);
   color: rgb(135,135,135);
   border-radius: 25px;
@@ -191,7 +259,7 @@ nav ul li a:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; 
-  align-items: stretch;
+  /*align-items: stretch;*/
 }
 
 .degree-left {
@@ -208,7 +276,7 @@ nav ul li a:hover {
 .profile-Name {
   display: inline;
   padding: 0;
-  color: rgb(185,100,40);
+  color: rgb(220,120,20);
 }
 
 .degree-title {
@@ -255,47 +323,6 @@ nav ul li a:hover {
   background-color: rgba(0,0,0, 0.00);
 }
 
-.SubjectSection {
-  background-color: rgba(0,0,0, 0.00);
-  /*margin: 10px 75px 10px 150px;*/
-}
-
-.SubjectSection-Box {
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-
-  background-color: rgba(255,255,255,0.034);
-  color: rgb(135,135,135);
-  border-radius: 25px;
-  border-style: solid;
-  border-width: 2px;
-  border-color: rgb(0,0,0);
-  overflow: hidden;
-
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.SubjectSection-Description {
-  display: inline;
-  padding: 12px 0px 12px 12px;
-}
-
-.SubjectSection-Title {
-  flex-basis: 100%;
-  margin: 0px 0px;
-  background-color: rgba(0,0,0,0.00);
-  color: rgb(0,0,0);
-}
-
-.SubjectSection-Subtitle {
-  display: inline;
-  color: rgb(255,255,255);
-}
-
 /*---------------------------*/
 /* Project Section */
 /*---------------------------*/
@@ -304,24 +331,6 @@ nav ul li a:hover {
   justify-content: space-around;
 }
 
-.project {
-  position: relative;
-  display: block;
-
-  padding: 0;
-  margin: 12px;
-  width: 300px;
-  height: 300px;
-
-  border-radius: 25px;
-  border-style: none;
-  background-color: rgb(135,135,135);
-
-  object-fit: contain;
-  overflow: hidden;
-
-  flex-shrink: 0;
-}
 
 .project-hover {
   margin: 0;
